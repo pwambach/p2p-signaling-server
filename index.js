@@ -49,7 +49,7 @@ const wsServer = new WebSocketServer({
   autoAcceptConnections: false
 });
 
-const protocol = 'webrtc-cutom-3425415';
+const protocol = 'webrtc-custom-signaling';
 const connections = {};
 const VALID_MESSAGE_TYPES = ['register', 'signal'];
 const messageHandlers = {
