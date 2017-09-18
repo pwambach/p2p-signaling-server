@@ -143,8 +143,13 @@ function onError(error) {
   log(`Connection ${id} error: `, error);
 }
 
+// edit for your needs
 function originIsAllowed(origin) {
-  return ['http://localhost'].some(valid => origin.startsWith(valid));
+  return [
+    'http://localhost',
+    'http://192.168',
+    'https://webar-p2p.now.sh'
+  ].some(valid => origin.startsWith(valid));
 }
 
 function getIdFromConnection(connection) {
