@@ -148,7 +148,7 @@ function originIsAllowed(origin) {
   return [
     'http://localhost',
     'http://192.168',
-    'https://webar-p2p.now.sh'
+    'https://webar-spectator.now.sh'
   ].some(valid => origin.startsWith(valid));
 }
 
